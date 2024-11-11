@@ -1,0 +1,196 @@
+  /* Estilos Generales */
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7fafc;
+    color: #2d3748;
+  }
+  .nav-link.active {
+    border: 2px solid red;
+    padding: 4px;
+    background-color: rgba(255, 0, 0, 0.1); /* Fondo sutil */
+}
+
+  
+  h1, h2, h3 {
+    color: #2d3748;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #3182ce;
+  }
+  
+  a:hover {
+    color: #2b6cb0;
+  }
+  
+  b:hover {
+    color:  #148f1e;
+}
+
+  /* Cabecera */
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+  }
+
+
+  #about {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2BknT0z0s7UtCOrZyHYzDASa9sL31xjLcaA&s'); /* Ruta de la imagen de fondo */
+    background-size: 120% auto; /* Ajusta la imagen al 100% del ancho y mantiene su proporción original */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    background-attachment: fixed; /* Hace que la imagen se quede fija mientras se hace scroll */
+    padding: 40px; /* Añade espacio alrededor del contenido */
+    color: white; /* Cambia el color del texto si es necesario para mayor contraste */
+}
+
+  
+  .header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2d3748;
+    margin-left: 20px;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    color: #2d3748;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    color: #4a5568;
+  }
+  
+  /* Contenedor Principal */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Sección de Contenido */
+  .section {
+    margin: 40px 0;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-gray-700 {
+    color: #4a5568;
+  }
+  
+  /* Estilos de Tarjetas para Proyectos */
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .card p {
+    color: #4a5568;
+    margin: 10px 0;
+  }
+  
+  .card a {
+    color: #3182ce;
+    font-weight: bold;
+  }
+  
+  /* Estilos de Habilidades */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .skill-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Formulario de Contacto */
+  form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  form button {
+    background-color: #3182ce;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  form button:hover {
+    background-color: #2b6cb0;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #fff;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    color: #4a5568;
+    font-size: 14px;
+  }
+  

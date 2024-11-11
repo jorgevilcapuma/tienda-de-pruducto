@@ -1,0 +1,108 @@
+<html>
+ <head>
+  <title>
+   Mi Portafolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   .carousel-open:checked + .carousel-item {
+            position: static;
+            opacity: 100;
+        }
+        .carousel-item {
+            transition: opacity 0.6s ease-out;
+        }
+        #carousel-1:checked ~ .control-1,
+        #carousel-2:checked ~ .control-2,
+        #carousel-3:checked ~ .control-3 {
+            display: block;
+        }
+        .carousel-indicators {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            bottom: 2%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 10;
+        }
+        #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+        #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+        #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+            color: #000;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="container mx-auto my-8">
+   <h1 class="text-4xl font-bold text-center mb-8">
+    Mi Portafolio
+   </h1>
+   <div class="carousel relative shadow-2xl bg-white">
+    <div class="carousel-inner relative overflow-hidden w-full">
+     <!--Slide 1-->
+     <input aria-hidden="true" checked="checked" class="carousel-open" hidden="" id="carousel-1" name="carousel" type="radio"/>
+     <div class="carousel-item absolute opacity-0" style="height:50vh;">
+      <div class="block h-full w-full bg-blue-500 text-white text-5xl text-center">
+       <img alt="Placeholder image of a modern web design project" class="w-full h-full object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/e8P2H5LkowTROSBOWied8RSDsWQ8IRq2MOhgQwPWROsMCffOB.jpg" width="800"/>
+      </div>
+     </div>
+     <label class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-white hover:text-blue-700 rounded-full bg-black hover:bg-white leading-tight text-center z-10 inset-y-0 left-0 my-auto" for="carousel-3">
+      ‹
+     </label>
+     <label class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-white hover:text-blue-700 rounded-full bg-black hover:bg-white leading-tight text-center z-10 inset-y-0 right-0 my-auto" for="carousel-2">
+      ›
+     </label>
+     <!--Slide 2-->
+     <input aria-hidden="true" class="carousel-open" hidden="" id="carousel-2" name="carousel" type="radio"/>
+     <div class="carousel-item absolute opacity-0" style="height:50vh;">
+      <div class="block h-full w-full bg-blue-500 text-white text-5xl text-center">
+       <img alt="Placeholder image of a mobile app design project" class="w-full h-full object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/TnoqUCl3Tew8cKjs3wtCl8I6AaeWv0GL1fMzdiAeejZcR4f7E.jpg" width="800"/>
+      </div>
+     </div>
+     <label class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-white hover:text-blue-700 rounded-full bg-black hover:bg-white leading-tight text-center z-10 inset-y-0 left-0 my-auto" for="carousel-1">
+      ‹
+     </label>
+     <label class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-white hover:text-blue-700 rounded-full bg-black hover:bg-white leading-tight text-center z-10 inset-y-0 right-0 my-auto" for="carousel-3">
+      ›
+     </label>
+     <!--Slide 3-->
+     <input aria-hidden="true" class="carousel-open" hidden="" id="carousel-3" name="carousel" type="radio"/>
+     <div class="carousel-item absolute opacity-0" style="height:50vh;">
+      <div class="block h-full w-full bg-blue-500 text-white text-5xl text-center">
+       <img alt="Placeholder image of a graphic design project" class="w-full h-full object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/fHlUBDVRzi3vSqFwkNz0eqGIH8IIq8dwJnhex9eG5zt2I8fdC.jpg" width="800"/>
+      </div>
+     </div>
+     <label class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-white hover:text-blue-700 rounded-full bg-black hover:bg-white leading-tight text-center z-10 inset-y-0 left-0 my-auto" for="carousel-2">
+      ‹
+     </label>
+     <label class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-white hover:text-blue-700 rounded-full bg-black hover:bg-white leading-tight text-center z-10 inset-y-0 right-0 my-auto" for="carousel-1">
+      ›
+     </label>
+     <!-- Add additional indicators for each slide-->
+     <ol class="carousel-indicators">
+      <li class="inline-block mr-3">
+       <label class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-700" for="carousel-1">
+        •
+       </label>
+      </li>
+      <li class="inline-block mr-3">
+       <label class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-700" for="carousel-2">
+        •
+       </label>
+      </li>
+      <li class="inline-block mr-3">
+       <label class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-700" for="carousel-3">
+        •
+       </label>
+      </li>
+     </ol>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
